@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyMVP</string>
+    <string name="login_act_edit_user_name">请输入名称</string>
+    <string name="login_act_edit_password">请输入密码</string>
+    <string name="login_act_edit_button">登录</string>
+
+    <!--Toast-->
+    <string name="login_success">登录成功</string>
+    <string name="login_failed">登录失败</string>
+
+</resources>
