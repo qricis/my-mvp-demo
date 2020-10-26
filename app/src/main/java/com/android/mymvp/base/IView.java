@@ -1,4 +1,4 @@
-package com.android.mymvp.view;
+package com.android.mymvp.base;
 
 /**
  * Description

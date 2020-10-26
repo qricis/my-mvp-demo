@@ -1,4 +1,4 @@
-package com.android.mymvp.model;
+package com.android.mymvp.base;
 
 /**
  * Description

@@ -1,4 +1,4 @@
-package com.android.mymvp.activity;
+package com.android.mymvp.ui.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,8 +10,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.mymvp.R;
-import com.android.mymvp.presenter.LoginPresenter;
-import com.android.mymvp.view.ILoginView;
 
 /**
 * Description
@@ -21,7 +19,7 @@ import com.android.mymvp.view.ILoginView;
 * @author qricis on 2020/10/23 13:27
 * @version 1.0.0
 */
-public class LoginActivity extends AppCompatActivity implements ILoginView {
+public class LoginActivity extends AppCompatActivity implements LoginContract.View {
     private EditText mUserNameEdit;
     private EditText mPasswordEdit;
     private Button mLoginBtn;
@@ -31,7 +29,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         setView();
         setData();
     }
@@ -50,7 +48,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
     }
 
     private void setData() {
-        this.mLoginPresenter = new LoginPresenter(this);
+        this.mLoginPresenter = new LoginPresenter();
     }
 
     @Override
@@ -76,7 +74,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //记得在销毁的时候断掉引用链，养车良好的习惯
+        //记得在销毁的时候断掉引用链，养成良好的习惯
         this.mLoginPresenter = null;
     }
 }
