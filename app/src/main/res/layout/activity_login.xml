@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.mymvp.ui.login.LoginActivity">
+
+    <EditText
+        android:id="@+id/login_act_edit_user_name"
+        android:layout_width="@dimen/login_act_edit_user_name_width"
+        android:layout_height="@dimen/login_act_edit_user_name_height"
+        android:layout_marginTop="@dimen/login_act_edit_user_name_marginTop"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/login_act_edit_user_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_act_edit_password"
+        android:layout_width="@dimen/login_act_edit_password_width"
+        android:layout_height="@dimen/login_act_edit_password_height"
+        android:layout_marginTop="@dimen/login_act_edit_password_marginTop"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/login_act_edit_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_act_edit_user_name"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/login_act_edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/login_act_edit_button_marginTop"
+        android:text="@string/login_act_edit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_act_edit_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_act_edit_user_name_width">340dp</dimen>
+    <dimen name="login_act_edit_user_name_height">45dp</dimen>
+    <dimen name="login_act_edit_user_name_marginTop">152dp</dimen>
+    <dimen name="login_act_edit_password_width">340dp</dimen>
+    <dimen name="login_act_edit_password_height">45dp</dimen>
+    <dimen name="login_act_edit_password_marginTop">16dp</dimen>
+    <dimen name="login_act_edit_button_marginTop">64dp</dimen>
+</resources>
